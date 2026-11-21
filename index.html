@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>PPDB SMK Avicena Rajeg</title>
+  <link rel="icon" href="assets/logo-avicena.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-glass fixed-top" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-custom" href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" aria-label="SMK Avicena Rajeg">
+        <span class="logo-pill"><img src="assets/logo-avicena.jpg" alt="Logo SMK Avicena Rajeg"></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto">
+          <!-- Home Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">      
+              <i class="fa-solid fa-house me-1"></i> Home              
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#visi-misi"><i class="fa-solid fa-bullseye me-2"></i>Visi &amp; Misi</a></li>
+              <li><a class="dropdown-item" href="#jurusan"><i class="fa-solid fa-book-open me-2"></i>Program Keahlian</a></li>
+              <li><a class="dropdown-item" href="#informasi-sekolah"><i class="fa-solid fa-circle-info me-2"></i>Informasi Sekolah</a></li>              
+            </ul>
+          </li>
+          <!-- Info PPDB Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              <i class="fa-solid fa-clipboard-list me-1"></i> Info PPDB
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#alur"><i class="fa-solid fa-route me-2"></i>Alur &amp; Jadwal Gelombang</a></li>
+              <li><a class="dropdown-item" href="#biaya"><i class="fa-solid fa-money-bill-wave me-2"></i>Rincian Biaya</a></li>
+              <li><a class="dropdown-item" href="#persyaratan"><i class="fa-solid fa-folder-open me-2"></i>Persyaratan Berkas &amp; Map</a></li>
+            </ul>
+          </li>
+          <!-- Cek Status -->
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalStatus"><i class="fa-solid fa-magnifying-glass me-1"></i> Cek Status</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 nav-actions">
+          <a href="#" class="btn btn-cta" data-bs-toggle="modal" data-bs-target="#modalDaftar"><i class="fa-solid fa-pen-to-square me-1"></i> Daftar Sekarang</a>
+          <a href="#" class="btn btn-admin" data-bs-toggle="modal" data-bs-target="#modalAdminLogin" title="Login Panitia"><i class="fa-solid fa-lock"></i><span class="d-lg-none ms-2">Admin</span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="blob blob-1"></div><div class="blob blob-2"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <div class="hero-badge">
+            <i class="fa-solid fa-award"></i> Akreditasi B
+          </div>
+          <h1>Mewujudkan Generasi <span>Terampil, Berkarakter</span> &amp; Siap Kerja</h1>
+          <p class="lead">SMK Avicena Rajeg menghadirkan pendidikan vokasi berkualitas tinggi berbasis standar industri modern, siap mencetak lulusan yang profesional dan berdaya saing.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#" class="btn btn-cta btn-lg px-4 fs-6 rounded-3" data-bs-toggle="modal" data-bs-target="#modalDaftar"><i class="fa-solid fa-pen-to-square me-1"></i> Daftar Sekarang</a>
+            <a href="#jurusan" class="btn btn-primary btn-lg px-4 fs-6 rounded-3">Lihat Jurusan <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            <a href="#informasi-sekolah" class="btn btn-outline-light btn-lg px-4 fs-6 rounded-3">Kontak Kami</a>
+          </div>
+        </div>
+        <div class="col-lg-6 d-none d-lg-block">
+          <div class="hero-visual">
+            <div class="hero-logo-card"><img src="assets/logo-avicena.jpg" alt="Logo AVICENA"></div>
+            <span class="float-chip chip-a"><i class="fa-solid fa-network-wired"></i> TKJ</span>
+            <span class="float-chip chip-b"><i class="fa-solid fa-palette"></i> DKV</span>
+            <span class="float-chip chip-c"><i class="fa-solid fa-car"></i> TKR</span>
+            <span class="float-chip chip-d"><i class="fa-solid fa-calculator"></i> AKL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quotes Sekolah -->
+  <section class="quotes-section">
+    <div class="container">
+      <div class="quote-card reveal d-flex align-items-center gap-3">
+        <i class="fa-solid fa-quote-left fs-2 text-primary"></i>
+        <div>
+          Cerdas akademis, hebat praktis, mulia dengan taqwa. Itulah nafas kita sebagai siswa
+          <div class="fw-bold mt-1 text-dark fs-7">— Keluarga Besar SMK Avicena Rajeg</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visi Misi Section dengan Header -->
+  <section class="section" id="visi-misi">
+    <div class="container">    
+      <!-- DESAIN HEADER VISI MISI -->
+      <div class="section-header-modern reveal">
+        <div class="section-badge-pill">
+          <i class="fa-solid fa-bullseye"></i> Visi &amp; Misi
+        </div>
+        <h2 class="section-title-gradient">
+          Komitmen <span>Pendidikan Utama</span> Kami
+        </h2>
+        <p class="section-subtext">Landasan fondasi dan arah tujuan utama <br> SMK Avicena Rajeg dalam mencetak generasi unggul.</p>
+        <div class="section-divider-line"></div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="vm-card reveal">
+            <div class="vm-icon visi"><i class="fa-solid fa-eye"></i></div>
+            <h4 class="fw-bold">Visi Sekolah</h4>
+            <p class="text-muted mb-0">Mencetak manusia yang handal dan berkualitas, siap menghadapi tuntutan zaman secara profesional dan bertaqwa kepada Tuhan Yang Maha Esa.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="vm-card reveal">
+            <div class="vm-icon misi"><i class="fa-solid fa-bullseye"></i></div>
+            <h4 class="fw-bold">Misi Sekolah</h4>
+            <ul class="text-muted ps-3 mb-0">
+              <li class="mb-2">Menyiapkan tenaga ahli dan terampil yang profesional di bidang keahlian masing-masing.</li>
+              <li class="mb-2">Menanamkan sikap disiplin, jujur, dan bertaqwa kepada Tuhan Yang Maha Esa.</li>
+              <li>Membekali peserta didik dengan pengetahuan dan keterampilan agar siap kerja atau mampu berkompetisi di Dunia Usaha/Dunia Industri (DU/DI).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program Keahlian Section dengan Header Baru -->
+  <section class="section bg-light" id="jurusan">
+    <div class="container">      
+      <!-- DESAIN HEADER JURUSAN -->
+      <div class="section-header-modern reveal">
+        <div class="section-badge-pill">
+          <i class="fa-solid fa-graduation-cap"></i> Program Keahlian
+        </div>
+        <h2 class="section-title-gradient">
+          Pilihan <span>Jurusan &amp; Sistem Pembelajaran</span>
+        </h2>
+        <p class="section-subtext">Temukan passion dan keahlian spesifikmu bersama kurikulum vokasi berbasis industri modern.</p>
+        <div class="section-divider-line"></div>
+      </div>
+
+      <!-- Group 1: Jurusan Excellent -->
+      <div class="category-header">
+        <h3 class="category-title text-primary"><i class="fa-solid fa-star"></i> Program Jurusan Excellent (+)</h3>
+        <div class="badge-schedule">
+          <i class="fa-regular fa-clock"></i> Jam Pembelajaran: 07.00 - 14.00 WIB
+        </div>
+      </div>
+      
+      <div class="row g-4 mb-5">
+        <div class="col-md-6 col-lg-3">
+          <div class="jurusan-card reveal tilt">
+            <div class="jurusan-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h5 class="fw-bold">TKJ</h5>
+            <div class="text-primary fw-bold small mb-2">Teknik Komputer &amp; Jaringan</div>
+            <p class="text-muted small">Merancang, mengelola jaringan komputer, server, serta infrastruktur IT digital.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="jurusan-card reveal tilt">
+            <div class="jurusan-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h5 class="fw-bold">MP</h5>
+            <div class="text-primary fw-bold small mb-2">Manajemen Perkantoran</div>
+            <p class="text-muted small">Keahlian administrasi profesional, tata kelola kantor, dan kesekretariatan modern.</p>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="jurusan-card reveal tilt">
+            <div class="jurusan-icon"><i class="fa-solid fa-palette"></i></div>
+            <h5 class="fw-bold">DKV</h5>
+            <div class="text-primary fw-bold small mb-2">Desain Komunikasi Visual</div>
+            <p class="text-muted small">Kreativitas desain grafis, multimedia, pemrosesan video, dan branding visual.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Group 2: Jurusan Reguler -->
+      <div class="category-header">
+        <h3 class="category-title text-secondary"><i class="fa-solid fa-layer-group"></i> Program Jurusan Reguler</h3>
+        <div class="d-flex gap-2 flex-wrap">
+          <div class="badge-schedule text-dark bg-white border">
+            <i class="fa-solid fa-sun text-warning"></i> Sesi Pagi: 07.00 - 12.00 WIB
+          </div>
+          <div class="badge-schedule text-dark bg-white border">
+            <i class="fa-solid fa-moon text-primary"></i> Sesi Siang: 13.00 - 17.00 WIB
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="jurusan-card reveal tilt">
+            <div class="jurusan-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h5 class="fw-bold">TKJ</h5>
+            <div class="text-secondary fw-bold small mb-2">Teknik Komputer &amp; Jaringan</div>
+            <p class="text-muted small">Pembelajaran dasar infrastruktur jaringan dan hardware komputer.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="jurusan-card reveal tilt">
+            <div class="jurusan-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <h5 class="fw-bold">MP</h5>
+            <div class="text-secondary fw-bold small mb-2">Manajemen Perkantoran</div>
+            <p class="text-muted small">Dasar-dasar tata kelola dokumen dan korespondensi bisnis.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="jurusan-card reveal tilt">
+            <div class="jurusan-icon"><i class="fa-solid fa-calculator"></i></div>
+            <h5 class="fw-bold">AKL</h5>
+            <div class="text-secondary fw-bold small mb-2">Akuntansi &amp; Keuangan</div>
+            <p class="text-muted small">Dasar-dasar pembukuan akuntansi keuangan instansi.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="jurusan-card reveal tilt">
+            <div class="jurusan-icon"><i class="fa-solid fa-palette"></i></div>
+            <h5 class="fw-bold">DKV</h5>
+            <div class="text-secondary fw-bold small mb-2">Desain Komunikasi Visual</div>
+            <p class="text-muted small">Dasar elemen gambar, ilustrasi, dan desain grafis.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="jurusan-card reveal tilt">
+            <div class="jurusan-icon"><i class="fa-solid fa-car"></i></div>
+            <h5 class="fw-bold">TKR</h5>
+            <div class="text-secondary fw-bold small mb-2">Teknik Kendaraan Ringan</div>
+            <p class="text-muted small">Pemeliharaan, pembersihan, dan perbaikan mesin otomotif mobil.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="jurusan-card reveal tilt">
+            <div class="jurusan-icon"><i class="fa-solid fa-motorcycle"></i></div>
+            <h5 class="fw-bold">TBSM</h5>
+            <div class="text-secondary fw-bold small mb-2">Teknik Sepeda Motor</div>
+            <p class="text-muted small">Teknisi perbaikan, perawatan, serta servis mesin sepeda motor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INFO PPDB ===================== -->
+  <section class="section ppdb-section" id="info-ppdb">
+    <div class="container">
+      <div class="section-header-modern reveal">
+        <div class="section-badge-pill"><i class="fa-solid fa-clipboard-list"></i> Info PPDB</div>
+        <h2 class="section-title-gradient">Penerimaan <span>Peserta Didik Baru</span></h2>
+        <p class="section-subtext">Alur, jadwal gelombang, rincian biaya, dan persyaratan pendaftaran SMK Avicena Rajeg.</p>
+        <div class="section-divider-line"></div>
+      </div>
+
+      <!-- Alur -->
+      <div id="alur" class="anchor-offset"></div>
+      <h3 class="sub-title reveal"><i class="fa-solid fa-route"></i> Alur Pendaftaran</h3>
+      <div class="row g-3 mb-5">
+        <div class="col-md-6 col-lg"><div class="step-card reveal"><span class="step-no">1</span><h6>Isi Formulir</h6><p>Daftar online lewat tombol “Daftar Sekarang”.</p></div></div>
+        <div class="col-md-6 col-lg"><div class="step-card reveal"><span class="step-no">2</span><h6>Serahkan Berkas</h6><p>Kumpulkan berkas persyaratan ke sekolah.</p></div></div>
+        <div class="col-md-6 col-lg"><div class="step-card reveal"><span class="step-no">3</span><h6>Verifikasi</h6><p>Panitia memeriksa data dan berkas.</p></div></div>
+        <div class="col-md-6 col-lg"><div class="step-card reveal"><span class="step-no">4</span><h6>Cek Status</h6><p>Lihat hasil dengan NISN / No. Pendaftaran.</p></div></div>
+        <div class="col-md-6 col-lg"><div class="step-card reveal"><span class="step-no">5</span><h6>Daftar Ulang</h6><p>Peserta yang diterima melakukan daftar ulang.</p></div></div>
+      </div>
+
+      <h3 class="sub-title reveal"><i class="fa-solid fa-calendar-days"></i> Jadwal Gelombang</h3>
+      <div class="row g-4 mb-5" id="gelombangList"></div>
+
+      <!-- Biaya -->
+      <div id="biaya" class="anchor-offset"></div>
+      <h3 class="sub-title reveal"><i class="fa-solid fa-money-bill-wave"></i> Rincian Biaya</h3>
+      <div class="reveal">
+        <div class="free-banner"><i class="fa-solid fa-gift"></i> Gratis biaya pendaftaran &amp; seragam sesuai brosur</div>
+        <ul class="nav nav-pills seg-pills mb-3" role="tablist">
+          <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#biayaReguler" type="button"><i class="fa-solid fa-layer-group me-1"></i> Kelas Reguler</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#biayaExcellent" type="button"><i class="fa-solid fa-star me-1"></i> Kelas Excellent (+)</button></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="biayaReguler"><div class="table-card" id="tblReguler"></div></div>
+          <div class="tab-pane fade" id="biayaExcellent"><div class="table-card" id="tblExcellent"></div></div>
+        </div>
+      </div>
+
+      <!-- Persyaratan -->
+      <div id="persyaratan" class="anchor-offset"></div>
+      <h3 class="sub-title mt-5 reveal"><i class="fa-solid fa-folder-open"></i> Persyaratan Berkas &amp; Ketentuan Map</h3>
+      <div class="row g-4">
+        <div class="col-lg-7"><div class="table-card p-4 reveal"><h6 class="fw-bold mb-3">Berkas yang disiapkan</h6><ul class="check-list" id="berkasList"></ul></div></div>
+        <div class="col-lg-5"><div class="table-card p-4 reveal"><h6 class="fw-bold mb-3">Warna Map per Jurusan</h6><div id="mapList"></div></div></div>
+      </div>
+
+      <div class="cta-band reveal">
+        <div><h4>Siap bergabung bersama AVICENA?</h4><p class="mb-0">Isi formulir pendaftaran online sekarang, hanya beberapa menit.</p></div>
+        <a href="#" class="btn btn-cta btn-lg" data-bs-toggle="modal" data-bs-target="#modalDaftar"><i class="fa-solid fa-pen-to-square me-1"></i> Daftar Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Informasi Sekolah Section -->
+  <section class="section" id="informasi-sekolah">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contact-info-card reveal">
+            <h4 class="fw-bold mb-4 text-center">Informasi Sekolah &amp; Kontak</h4>
+            <div class="d-flex align-items-start gap-3 mb-4">
+              <i class="fa-solid fa-location-dot text-primary fs-4 mt-1"></i>
+              <div>
+                <div class="fw-bold">Alamat Sekolah</div>
+                <div class="text-muted">Jl. Raya Rajeg, Kukun Sukatani, Sukamanah, Kecamatan Rajeg, Kabupaten Tangerang, Banten, 15540</div>
+              </div>
+            </div>
+            <div class="d-flex align-items-start gap-3 mb-4">
+              <i class="fa-solid fa-envelope text-primary fs-4 mt-1"></i>
+              <div>
+                <div class="fw-bold">Email</div>
+                <div class="text-muted">smkavicena@ymail.com</div>
+              </div>
+            </div>
+            <div class="d-flex align-items-start gap-3">
+              <i class="fa-solid fa-phone text-primary fs-4 mt-1"></i>
+              <div>
+                <div class="fw-bold">Telepon</div>
+                <div class="text-muted">(021) 91277052</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-6">
+          <div class="logo-pill mb-3"><img src="assets/logo-avicena.jpg" alt="Logo SMK Avicena Rajeg"></div>
+          <p class="small text-white-50 mb-0">Lembaga pendidikan vokasi terpercaya yang berkomitmen mencetak generasi terampil, mandiri, dan berkarakter mulia.</p>
+        </div>
+        <div class="col-lg-3 col-6">
+          <h6>Navigasi</h6>
+          <ul>
+            <li><a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Beranda</a></li>
+            <li><a href="#visi-misi">Visi Misi</a></li>
+            <li><a href="#jurusan">Program Keahlian</a></li>
+            <li><a href="#info-ppdb">Info PPDB</a></li>
+            <li><a href="#informasi-sekolah">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6">
+          <h6>Akses Portal</h6>
+          <ul>
+            <li><a href="auth-guru.html">Portal Guru</a></li>
+            <li><a href="auth-siswa.html">Portal Siswa</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="text-center small text-white-50">
+        &copy; 2026 SMK Avicena Rajeg. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scroll progress & back to top -->
+  <div id="scrollProgress"></div>
+  <button id="toTop" aria-label="Kembali ke atas"><i class="fa-solid fa-arrow-up"></i></button>
+  <div class="toast-container position-fixed bottom-0 start-50 translate-middle-x p-3"><div id="appToast" class="toast align-items-center text-bg-dark border-0"><div class="d-flex"><div class="toast-body" id="toastMsg"></div><button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button></div></div></div>
+
+  <!-- Modal Daftar -->
+  <div class="modal fade" id="modalDaftar" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+    <div class="modal-header"><h5 class="modal-title"><i class="fa-solid fa-pen-to-square me-2"></i>Formulir Pendaftaran Online</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+    <div class="modal-body">
+      <form id="formDaftar" novalidate>
+        <div class="row g-3">
+          <div class="col-md-6"><label class="form-label">Nama Lengkap</label><input class="form-control" name="nama" required></div>
+          <div class="col-md-6"><label class="form-label">NISN (10 digit)</label><input class="form-control" name="nisn" inputmode="numeric" pattern="\d{10}" maxlength="10" required></div>
+          <div class="col-md-6"><label class="form-label">Tempat Lahir</label><input class="form-control" name="tempat" required></div>
+          <div class="col-md-6"><label class="form-label">Tanggal Lahir</label><input type="date" class="form-control" name="tgl" required></div>
+          <div class="col-md-6"><label class="form-label">Jenis Kelamin</label><select class="form-select" name="jk" required><option value="">Pilih…</option><option>Laki-laki</option><option>Perempuan</option></select></div>
+          <div class="col-md-6"><label class="form-label">Asal Sekolah (SMP/MTs)</label><input class="form-control" name="asal" required></div>
+          <div class="col-md-6"><label class="form-label">Nama Orang Tua / Wali</label><input class="form-control" name="ortu" required></div>
+          <div class="col-md-6"><label class="form-label">No. HP / WhatsApp</label><input class="form-control" name="hp" inputmode="tel" pattern="[0-9+\- ]{8,16}" required></div>
+          <div class="col-12"><label class="form-label">Alamat</label><textarea class="form-control" name="alamat" rows="2" required></textarea></div>
+          <div class="col-md-4"><label class="form-label">Program</label><select class="form-select" name="program" id="selProgram" required><option value="">Pilih…</option><option>Excellent</option><option>Reguler</option></select></div>
+          <div class="col-md-4"><label class="form-label">Jurusan</label><select class="form-select" name="jurusan" id="selJurusan" required disabled><option value="">Pilih program dulu</option></select></div>
+          <div class="col-md-4"><label class="form-label">Gelombang</label><select class="form-select" name="gelombang" id="selGelombang" required></select></div>
+        </div>
+        <div class="invalid-note d-none mt-3" id="formErr"></div>
+      </form>
+    </div>
+    <div class="modal-footer"><button class="btn btn-light" data-bs-dismiss="modal">Batal</button><button class="btn btn-cta" id="btnKirim"><i class="fa-solid fa-paper-plane me-1"></i> Kirim Pendaftaran</button></div>
+  </div></div></div>
+
+  <!-- Modal Sukses -->
+  <div class="modal fade" id="modalSukses" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content text-center p-4">
+    <div class="success-check"><i class="fa-solid fa-check"></i></div>
+    <h5 class="fw-bold">Pendaftaran Berhasil!</h5>
+    <p class="text-muted mb-2">Simpan nomor pendaftaran Anda untuk cek status:</p>
+    <div class="reg-number" id="regNumber"></div>
+    <div class="d-flex gap-2 justify-content-center mt-3"><button class="btn btn-light" id="btnCopy"><i class="fa-regular fa-copy me-1"></i>Salin</button><button class="btn btn-cta" data-bs-dismiss="modal">Selesai</button></div>
+  </div></div></div>
+
+  <!-- Modal Cek Status -->
+  <div class="modal fade" id="modalStatus" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+    <div class="modal-header"><h5 class="modal-title"><i class="fa-solid fa-magnifying-glass me-2"></i>Cek Status Pendaftaran</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+    <div class="modal-body">
+      <label class="form-label">NISN atau Nomor Pendaftaran</label>
+      <div class="input-group"><input class="form-control" id="inpStatus" placeholder="Contoh: 0012345678 atau AVC-2026-0001"><button class="btn btn-cta" id="btnCek">Cek</button></div>
+      <div id="statusResult" class="mt-3"></div>
+    </div>
+  </div></div></div>
+
+  <!-- Modal Admin Login -->
+  <div class="modal fade" id="modalAdminLogin" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-sm"><div class="modal-content">
+    <div class="modal-header"><h5 class="modal-title"><i class="fa-solid fa-lock me-2"></i>Login Panitia</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+    <div class="modal-body">
+      <label class="form-label">Kata sandi</label>
+      <input type="password" class="form-control" id="inpAdminPass" autocomplete="off">
+      <div class="text-danger small mt-2 d-none" id="adminErr">Kata sandi salah.</div>
+      <button class="btn btn-cta w-100 mt-3" id="btnAdminLogin">Masuk</button>
+    </div>
+  </div></div></div>
+
+  <!-- Modal Admin Panel -->
+  <div class="modal fade" id="modalAdmin" tabindex="-1"><div class="modal-dialog modal-xl modal-dialog-scrollable"><div class="modal-content">
+    <div class="modal-header"><h5 class="modal-title"><i class="fa-solid fa-user-shield me-2"></i>Panel Panitia PPDB</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+    <div class="modal-body">
+      <div class="row g-2 mb-3" id="adminStats"></div>
+      <div class="d-flex flex-wrap gap-2 mb-3">
+        <input class="form-control" style="max-width:260px" id="adminSearch" placeholder="Cari nama / NISN / no…">
+        <select class="form-select" style="max-width:180px" id="adminFilter"><option value="">Semua status</option></select>
+        <button class="btn btn-light ms-auto" id="btnExport"><i class="fa-solid fa-file-csv me-1"></i>Ekspor CSV</button>
+      </div>
+      <div class="table-responsive"><table class="table table-hover align-middle admin-table"><thead><tr><th>No. Daftar</th><th>Nama</th><th>NISN</th><th>Program / Jurusan</th><th>Gel.</th><th>Status</th><th></th></tr></thead><tbody id="adminBody"></tbody></table></div>
+    </div>
+  </div></div></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
